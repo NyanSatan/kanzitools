@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32A716CE271F5C0700F070F1 /* libAstrisAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A716CC271F5BE200F070F1 /* libAstrisAPI.a */; };
+		32DE997D2522477C00F90344 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 32DE997C2522477C00F90344 /* main.c */; };
+		32DE9988252247E000F90344 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DE9987252247E000F90344 /* IOKit.framework */; };
+		32DE998A2522480200F90344 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DE9989252247F600F90344 /* libc++.tbd */; };
+		32DE998F2522492900F90344 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 32DE998E2522492900F90344 /* utils.c */; };
+		32DE99932522530A00F90344 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DE99922522530900F90344 /* CoreFoundation.framework */; };
+		32DE99952522539D00F90344 /* fraudlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 32DE99942522539D00F90344 /* fraudlib.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		32DE99772522477C00F90344 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		32A716CC271F5BE200F070F1 /* libAstrisAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAstrisAPI.a; path = /Users/noone/Projects/kanzifraudctl/../../../../usr/local/lib/libAstrisAPI.a; sourceTree = "<absolute>"; };
+		32DE99792522477C00F90344 /* kanzifraudctl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = kanzifraudctl; sourceTree = BUILT_PRODUCTS_DIR; };
+		32DE997C2522477C00F90344 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		32DE9987252247E000F90344 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		32DE9989252247F600F90344 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		32DE998E2522492900F90344 /* utils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
+		32DE99902522495100F90344 /* astris_api.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = astris_api.h; path = kanzifraudctl/astris_api.h; sourceTree = "<group>"; };
+		32DE99912522499000F90344 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utils.h; path = kanzifraudctl/utils.h; sourceTree = "<group>"; };
+		32DE99922522530900F90344 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		32DE99942522539D00F90344 /* fraudlib.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fraudlib.c; sourceTree = "<group>"; };
+		32DE9996252253DC00F90344 /* fraudlib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fraudlib.h; path = kanzifraudctl/fraudlib.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32DE99762522477C00F90344 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A716CE271F5C0700F070F1 /* libAstrisAPI.a in Frameworks */,
+				32DE99932522530A00F90344 /* CoreFoundation.framework in Frameworks */,
+				32DE998A2522480200F90344 /* libc++.tbd in Frameworks */,
+				32DE9988252247E000F90344 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32DE99702522477C00F90344 = {
+			isa = PBXGroup;
+			children = (
+				32DE997B2522477C00F90344 /* kanzifraudctl */,
+				32DE998B2522482500F90344 /* Include */,
+				32DE997A2522477C00F90344 /* Products */,
+				32DE9986252247E000F90344 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		32DE997A2522477C00F90344 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32DE99792522477C00F90344 /* kanzifraudctl */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32DE997B2522477C00F90344 /* kanzifraudctl */ = {
+			isa = PBXGroup;
+			children = (
+				32DE997C2522477C00F90344 /* main.c */,
+				32DE99942522539D00F90344 /* fraudlib.c */,
+				32DE998E2522492900F90344 /* utils.c */,
+			);
+			path = kanzifraudctl;
+			sourceTree = "<group>";
+		};
+		32DE9986252247E000F90344 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32A716CC271F5BE200F070F1 /* libAstrisAPI.a */,
+				32DE99922522530900F90344 /* CoreFoundation.framework */,
+				32DE9989252247F600F90344 /* libc++.tbd */,
+				32DE9987252247E000F90344 /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32DE998B2522482500F90344 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				32DE99902522495100F90344 /* astris_api.h */,
+				32DE9996252253DC00F90344 /* fraudlib.h */,
+				32DE99912522499000F90344 /* utils.h */,
+			);
+			name = Include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32DE99782522477C00F90344 /* kanzifraudctl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32DE99802522477C00F90344 /* Build configuration list for PBXNativeTarget "kanzifraudctl" */;
+			buildPhases = (
+				32DE99752522477C00F90344 /* Sources */,
+				32DE99762522477C00F90344 /* Frameworks */,
+				32DE99772522477C00F90344 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kanzifraudctl;
+			productName = kanzifraudctl;
+			productReference = 32DE99792522477C00F90344 /* kanzifraudctl */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32DE99712522477C00F90344 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = noone;
+				TargetAttributes = {
+					32DE99782522477C00F90344 = {
+						CreatedOnToolsVersion = 11.3.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 32DE99742522477C00F90344 /* Build configuration list for PBXProject "kanzifraudctl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32DE99702522477C00F90344;
+			productRefGroup = 32DE997A2522477C00F90344 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32DE99782522477C00F90344 /* kanzifraudctl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32DE99752522477C00F90344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32DE997D2522477C00F90344 /* main.c in Sources */,
+				32DE99952522539D00F90344 /* fraudlib.c in Sources */,
+				32DE998F2522492900F90344 /* utils.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		32DE997E2522477C00F90344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		32DE997F2522477C00F90344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		32DE99812522477C00F90344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		32DE99822522477C00F90344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32DE99742522477C00F90344 /* Build configuration list for PBXProject "kanzifraudctl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32DE997E2522477C00F90344 /* Debug */,
+				32DE997F2522477C00F90344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32DE99802522477C00F90344 /* Build configuration list for PBXNativeTarget "kanzifraudctl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32DE99812522477C00F90344 /* Debug */,
+				32DE99822522477C00F90344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32DE99712522477C00F90344 /* Project object */;
+}
