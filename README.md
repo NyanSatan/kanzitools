@@ -212,3 +212,7 @@ reading at offset: 896
 written to /tmp/kanzi.der
 noone@Mac-mini-noone ~ %
 ```
+
+# Credits
+
+Objective-See project for ProcInfo
