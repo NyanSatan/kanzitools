@@ -33,7 +33,7 @@ where VERB is one of the following:
 For obvious reasons, your probe must already be in bootloader mode. To enter it press a little button...:
 
 * **Kanzi**/**Nova**/**Koba** - ...in the LED hole
-* **Chimp** - ...in the non-LED hole (the furthest one from micro USB port)
+* **Chimp** - ...in the non-LED hole (the furthest one from micro-USB port)
 * **Koko** - ...near the ARM Cortex Debug connector and the green blinking LED
 
 **UDT** doesn't have the button (or it's unreachable due to its' special enclosure), so **probeenterdfu** in conjuction with **astrisprobed_patcher** might be handy (next 2 sections)
@@ -73,7 +73,7 @@ A tiny tool you can use to send a probe to bootloader mode programmatically, i.e
 
 ### Building
 
-Using `make.sh`. This program does depend on **libAstrisAPI**, which must be installed at `/usr/local/bin` (comes with Astris since Tigris)
+Using `make.sh`. This program does depend on **libAstrisAPI**, which must be installed at `/usr/local/lib` (comes with Astris since Tigris)
 
 ### Usage
 
@@ -173,7 +173,7 @@ This one allows you to interact with **KFL** (**K**anzi **F**raud **L**ibrary) f
 
 ### Building
 
-Using Xcode. This tool does depend on **libAstrisAPI**, which must be installed at `/usr/local/bin` (comes with Astris since Tigris) 
+Using Xcode. This tool does depend on **libAstrisAPI**, which must be installed at `/usr/local/lib` (comes with Astris since Tigris) 
 
 ### Usage
 
