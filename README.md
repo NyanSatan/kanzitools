@@ -67,6 +67,42 @@ c) ChimpBoot-3-REDACTED
 Select one of the devices listed above: 
 ```
 
+## kblcrcfix
+
+***WARNING**: this is dangerous! Messing with firmware can break your priceless probe! Proceed only if you absolutely know what you are doing!*
+
+A small tool that fixes CRC in **Kanzi** (and derivatives), **Chimp** (and derivatives) and **Koko** firmwares in case you patched them. If you don't fix CRC, probe's bootloader will not jump to the actual firmware and thus will open DFU instead
+
+It also can be used to truncate dumped firmwares (1 MiB for **Kanzi**/**Chimp** and 128 KiB for **Koko**) to their original lengths
+
+### Building
+
+Using `make.sh`. This tool doesn't depend on **libAstrisAPI**
+
+### Usage
+
+Dead easy:
+
+```
+➜  kblcrcfix git:(master) ✗ ./kblcrcfix
+./kblcrcfix <input> <output>
+```
+
+Output example:
+
+```
+➜  kblcrcfix git:(master) ✗ ./kblcrcfix firmware_0.90_Chimp_like_UDT.bin /dev/null
+firmware length = 0x29ffc
+final CRC = 0x0cb100bc
+final CRC is NOT 0x0, fixing
+current CRC = 0x967b004b
+computed CRC = 0x6d637434
+recomputed final CRC = 0x00000000
+written output file
+DONE!
+➜  kblcrcfix git:(master) ✗
+```
+
 ## probeenterdfu
 
 A tiny tool you can use to send a probe to bootloader mode programmatically, i.e. without pressing any buttons
@@ -92,6 +128,8 @@ the probe should reach bootloader now
 
 ## astrisprobed_patcher
 
+***WARNING**: this tool hasn't been tested with modern versions of Astris and macOS, so be careful!*
+
 Patches `astrisprobed` in memory to make it detect **Nova** as **Kanzi** or **UDT** as **Chimp** or both
 
 ### Building
@@ -115,6 +153,8 @@ noone@Mac-mini-noone ~ %
 ```
 
 *Daemon mode* means it will always wait for `astrisprobed`' spawn. Useful if you want it to run with system startup
+
+You might need to kill `astrisprobed` (so it will respawn) before using this tool
 
 ***Warning**: as you can understand from its' usage description, this tool replaces PIDs, that means if you run it with `--nova`, for example, real Kanzi won't be detected anymore unless you restart `astrisprobed` (same for Chimp/UDT). For more elegant solution that allows using them simultaneously, look at SNRSpoofer (next section)*
 
