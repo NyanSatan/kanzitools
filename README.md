@@ -69,7 +69,7 @@ Select one of the devices listed above:
 
 ## kblcrcfix
 
-***WARNING**: this is dangerous! Messing with firmware can break your priceless probe! Proceed only if you absolutely know what you are doing!*
+***Warning**: this is dangerous! Messing with firmware can break your priceless probe! Proceed only if you absolutely know what you are doing!*
 
 A small tool that fixes CRC in **Kanzi** (and derivatives), **Chimp** (and derivatives) and **Koko** firmwares in case you patched them. If you don't fix CRC, probe's bootloader will not jump to the actual firmware and thus will open DFU instead
 
@@ -128,7 +128,7 @@ the probe should reach bootloader now
 
 ## astrisprobed_patcher
 
-***WARNING**: this tool hasn't been tested with modern versions of Astris and macOS, so be careful!*
+***Warning**: this tool hasn't been tested with modern versions of Astris and macOS, so be careful! Nowadays you shall better patch firmware of your probe instead*
 
 Patches `astrisprobed` in memory to make it detect **Nova** as **Kanzi** or **UDT** as **Chimp** or both
 
@@ -170,7 +170,7 @@ This will leave you with **SIP** (mostly) enabled, except for disallowing certai
 
 ## SNRSpoofer
 
-***Warning**: be extremely careful with this one*
+***Warning**: be extremely careful with this one. Nowadays you shall better patch firmware of your probe instead*
 
 A code-less kernel extension that changes **Nova**'s USB PID (0x1624) to **Kanzi**'s (0x1621) on the fly by using `AppleUSBMergeNub`. Thus, you can use both **Kanzi** and **Nova** at the same time with Astris, but lose the ability to use **Nova** with Serial Number Reader app (can be patched though)
 
